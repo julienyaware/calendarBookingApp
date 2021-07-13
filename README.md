@@ -38,11 +38,17 @@ Firebase to save confirmations in a Firestore collection called confirmations
 
 Axios to interact with the API through fetching of data
 
-### `How the application works`
+### `Design Decisions`
 
 The app fullfils all the user stories mentioned in the challenge
 
-On the lading page is a calendar . When a date is selected all time slots in the date are shown regardless of whether its already booked or not. Upon selection of an already booked time slot an alert is shown that the slot is unavailable. When the user books an available time slot a confirmation box is shown upon which the user can enter the reason and submit. The details are then sent to the database.Upon successful submission to the database a popup with the details of time and reason is shown.
+On the lading page is a calendar . I used react-js-calendar library so because of its flexibility incase a  student would like to book an appointment even a year from now .
+
+When a date is selected all time slots in the date are shown regardless of whether its already booked or not as the user stories suggest.Once a date is selected an API call to the mock API is made so as to get the date and times of already taken timeslots and this information is used to determine what happens on clicking a time slot.
+
+Upon selection of an already booked time slot an alert is shown that the slot is unavailable. 
+
+When the user books an available time slot a confirmation box is shown upon which the user can enter the reason and submit. The details are then sent to the database.Upon successful submission to the database a popup with the details of time and reason is shown.
 
 
 ### `What to expect`
