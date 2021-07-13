@@ -1,4 +1,4 @@
-import React, { useState }  from 'react'
+import React, { useState,useEffect }  from 'react'
 import Calendar from 'react-calendar'
 import TimeSlots from './TimeSlots'
 import axios from 'axios'
@@ -14,17 +14,22 @@ function CfCalendar() {
   async function fetchData() {
     try {
      const  result = await axios.get("https://private-37dacc-cfcalendar.apiary-mock.com/mentors/1/agenda")
-    //  setExistingAppointments(result)
-     console.log(result.data);
+    setExistingAppointments(result.data)
+    console.log(existingAppointments);
      setShowTimeSlots(true)
     } catch (error) {
       alert('Please check your internet connection:',error)
     }
   }
 
+  // useEffect(() => {
+  //   fetchData();
+  // });
+
     const onChange = date => {
       setDate(date)
       fetchData()
+      //console.log(existingAppointments)
     
     }
 
@@ -36,7 +41,7 @@ function CfCalendar() {
          onChange={onChange}
          value={date}
         />
-        {showTimeSlots ?  <TimeSlots/> : null}  
+        {showTimeSlots ?  <TimeSlots alreadyExistingAppointments={existingAppointments} datePicked={date}/> : null}  
         {console.log(date)}
       </div>
     )

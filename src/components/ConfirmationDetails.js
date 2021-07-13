@@ -39,7 +39,7 @@ function ConfirmationDetails() {
     <div>
       {!showTimeSlots && (
         <center className="confirmationForm">
-          <button className="timeStop" onClick={triggerShowTimeSlots}>Select another time slot</button>
+          <button className="backButton" onClick={refreshPage}>pick a different time slot</button>
           <form
             onSubmit={(event) => { sub(event) }}>
             <label>User Name:</label>

@@ -89,3 +89,10 @@ label{
   border: 3px solid slateblue;
   padding: 30px;
 }
+.backButton{
+  border-radius: 5px;
+  padding: 10px;
+  color: slateblue;
+  text-transform: uppercase;
+  font-weight: bold;
+}
