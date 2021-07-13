@@ -102,3 +102,58 @@ label{
   padding: 10px;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .App-Content {
+    background-color: #cfd6d8;
+    min-height: 100vh;
+    display: flex;
+    row-gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .react-calendar{
+    width: 300px !important;
+  }
+
+  .slots{
+    margin-bottom: 50px;
+   
+  }
+  .confirmationForm{
+    margin-bottom: 50px;
+  }
+  .header-title{
+  font-size: large;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .App-Content {
+    background-color: #cfd6d8;
+    min-height: 100vh;
+    display: flex;
+    row-gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .react-calendar{
+    width: 300px !important;
+  }
+
+  .slots{
+    margin-bottom: 50px;
+   
+  }
+  .confirmationForm{
+    margin-bottom: 50px;
+  }
+}
