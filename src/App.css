@@ -79,3 +79,13 @@ input, textarea{
   padding: 5px;
   border-radius: 5px;
 }
+
+label{
+  font-size: small;
+  color: black;
+}
+.confirmationForm{
+  border-radius: 5px;
+  border: 3px solid slateblue;
+  padding: 30px;
+}
