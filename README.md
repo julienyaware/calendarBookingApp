@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+### `Soulution for the Career Foundry Challenge : Calendar /Booking app`
+
+The app has been deployed on github pages . Use [this link](https://julienyaware.github.io/challengeCareerFoundry/) to access it
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## There are two ways you can view the code
+
+(Without necessarily cloning the repository)
+
+1. You can view the code using codeSandBox on your browser using [this link](https://codesandbox.io/s/github/julienyaware/challengeCareerFoundry)
+
+2. Clone this repository
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all the libraries needed that are in the package.json
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### `Libraries and Technologies used`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React UI Library for UI design
 
-### `npm run build`
+react-calendar-js for dates
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Simple CSS for simple styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Moment JS to manipulate dates
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Firebase to save confirmations in a Firestore collection called confirmations
 
-### `npm run eject`
+Axios to interact with the API through fetching of data
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `How the application works`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app fullfils all the user stories mentioned in the challenge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+On the lading page is a calendar . When a date is selected all time slots in the date are shown regardless of whether its already booked or not. Upon selection of an already booked time slot an alert is shown that the slot is unavailable. When the user books an available time slot a confirmation box is shown upon which the user can enter the reason and submit. The details are then sent to the database.Upon successful submission to the database a popup with the details of time and reason is shown.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `What to expect`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/13431164/125536808-fab8f42e-4388-4f1f-9f6d-ee11eaadb97e.png)
+![image](https://user-images.githubusercontent.com/13431164/125536854-8c455e7c-8f00-4684-80b4-1efff8b00289.png)
+![image](https://user-images.githubusercontent.com/13431164/125536924-a8a44835-e231-4c30-a8a8-d0d267f38d2f.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application is also responsive.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
