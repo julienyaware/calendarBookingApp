@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/challengeCareerFoundry/static/css/main.f8d9578e.chunk.css",
-    "main.js": "/challengeCareerFoundry/static/js/main.68d6c1bc.chunk.js",
-    "main.js.map": "/challengeCareerFoundry/static/js/main.68d6c1bc.chunk.js.map",
+    "main.css": "/challengeCareerFoundry/static/css/main.a41e079a.chunk.css",
+    "main.js": "/challengeCareerFoundry/static/js/main.bcb2b6db.chunk.js",
+    "main.js.map": "/challengeCareerFoundry/static/js/main.bcb2b6db.chunk.js.map",
     "runtime-main.js": "/challengeCareerFoundry/static/js/runtime-main.6bb120ce.js",
     "runtime-main.js.map": "/challengeCareerFoundry/static/js/runtime-main.6bb120ce.js.map",
     "static/css/2.8cebfa1f.chunk.css": "/challengeCareerFoundry/static/css/2.8cebfa1f.chunk.css",
-    "static/js/2.b15c50ee.chunk.js": "/challengeCareerFoundry/static/js/2.b15c50ee.chunk.js",
-    "static/js/2.b15c50ee.chunk.js.map": "/challengeCareerFoundry/static/js/2.b15c50ee.chunk.js.map",
+    "static/js/2.008077c6.chunk.js": "/challengeCareerFoundry/static/js/2.008077c6.chunk.js",
+    "static/js/2.008077c6.chunk.js.map": "/challengeCareerFoundry/static/js/2.008077c6.chunk.js.map",
     "static/js/3.c5d90791.chunk.js": "/challengeCareerFoundry/static/js/3.c5d90791.chunk.js",
     "static/js/3.c5d90791.chunk.js.map": "/challengeCareerFoundry/static/js/3.c5d90791.chunk.js.map",
     "index.html": "/challengeCareerFoundry/index.html",
     "static/css/2.8cebfa1f.chunk.css.map": "/challengeCareerFoundry/static/css/2.8cebfa1f.chunk.css.map",
-    "static/css/main.f8d9578e.chunk.css.map": "/challengeCareerFoundry/static/css/main.f8d9578e.chunk.css.map",
-    "static/js/2.b15c50ee.chunk.js.LICENSE.txt": "/challengeCareerFoundry/static/js/2.b15c50ee.chunk.js.LICENSE.txt"
+    "static/css/main.a41e079a.chunk.css.map": "/challengeCareerFoundry/static/css/main.a41e079a.chunk.css.map",
+    "static/js/2.008077c6.chunk.js.LICENSE.txt": "/challengeCareerFoundry/static/js/2.008077c6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6bb120ce.js",
     "static/css/2.8cebfa1f.chunk.css",
-    "static/js/2.b15c50ee.chunk.js",
-    "static/css/main.f8d9578e.chunk.css",
-    "static/js/main.68d6c1bc.chunk.js"
+    "static/js/2.008077c6.chunk.js",
+    "static/css/main.a41e079a.chunk.css",
+    "static/js/main.bcb2b6db.chunk.js"
   ]
 }
