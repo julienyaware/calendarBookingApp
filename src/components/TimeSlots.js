@@ -1,36 +1,28 @@
 import React, { useState } from 'react'
 import moment from 'moment'
 import ConfirmationDetails from './ConfirmationDetails'
-import {
-  isEqual,
-  isPast,
-  addDays,
-  format,
-  set,
-  startOfDay,
-  startOfMonth,
-  getDaysInMonth,
-  isSameDay,
-} from "date-fns";
-
 
 
 let allTimeSlotsInDay = []
 
-function TimeSlots({alreadyExistingAppointments, datePicked}) {
+function TimeSlots({ alreadyExistingAppointments, datePicked }) {
 
   const [bookAppointment, setBookAppointment] = useState(false)
-
-  const totalHoursInADay = [...Array(24)].map((x, i) => i);
 
   const alreadyTakenSlots = alreadyExistingAppointments.calendar.map(
     (slot) => new Date(Date.parse(slot.date_time))
   );
 
 
+  let selectedDate = moment(datePicked).format("YYYY-MM-DD");
+
+
   const getSlots = (start, end) => {
+
+
     const startTime = moment(start, 'HH:mm');
     const endTime = moment(end, 'HH:mm');
+
 
     if (endTime.isBefore(startTime)) {
       endTime.add(1, 'day');
@@ -46,30 +38,32 @@ function TimeSlots({alreadyExistingAppointments, datePicked}) {
   }
   allTimeSlotsInDay = getSlots('01:00', '00:00')
 
-  const triggerBookAppointmentState = () => {
-    //var finalDateTime = new Date(datePicked.setHours(0,0,0,0));
-    console.log(alreadyTakenSlots);
-    setBookAppointment(true)
+  const triggerBookAppointmentState = (slot) => {
+    const start = new Date(selectedDate + " " + slot)
+    const end = new Date(selectedDate + " " + moment(slot, 'HH:mm').add(1, 'hours').format('HH:mm'))
+
+    const isBooked = alreadyTakenSlots.some((slot) => {
+
+      return start <= slot && slot < end;
+    });
+    console.log(isBooked)
+    console.log(start)
+
   }
-
-  //timeSlots = getSlots('01:00', '23:59');
-  // console.log('timeSlots ', timeSlots);
-
-
 
   return (
     <div>
       {!bookAppointment && (
         <div className="slots">
           {allTimeSlotsInDay.map((slot, index) => (
-            <button className="timeStop" key={index} onClick={triggerBookAppointmentState}>
+            <button className="timeStop" key={index} onClick={() => triggerBookAppointmentState(slot)}>
               {slot}
             </button>
           ))}
         </div>
       )}
       {bookAppointment && (
-      <ConfirmationDetails />
+        <ConfirmationDetails />
       )}
 
     </div>

@@ -96,3 +96,9 @@ label{
   text-transform: uppercase;
   font-weight: bold;
 }
+.booked{
+  background-color: pink;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
