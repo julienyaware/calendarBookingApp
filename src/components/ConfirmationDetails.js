@@ -33,7 +33,7 @@ function ConfirmationDetails({selectedSlotDateAndTime}) {
 
   const refreshPage = () => {
     window.location.reload()
-   //console.log(String(selectedSlotDateAndTime))
+
   }
   return (
     <div>

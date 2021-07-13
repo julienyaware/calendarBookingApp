@@ -28,6 +28,7 @@
 }
 
 .react-calendar{
+  height: 300px !important;
   width: 460px !important;
 }
 
@@ -74,10 +75,18 @@
   background-color: #cfd6d8;
 }
 
-input, textarea{
+input{
   border: 2px solid slateblue;
   padding: 5px;
   border-radius: 5px;
+}
+
+textarea{
+  height: 50px;
+  border: 2px solid slateblue;
+  padding: 5px;
+  border-radius: 5px;
+}
 }
 
 label{

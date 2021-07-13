@@ -8,17 +8,11 @@ let allTimeSlotsInDay = []
 function TimeSlots({ alreadyExistingAppointments, datePicked }) {
 
   const [bookAppointment, setBookAppointment] = useState(false)
-  const [slotAvailable, setSlotAvailable] = useState(false)
   const [selectedSlotDateAndTime, setSelectedSlotDateAndTime] = useState()
-  const [mentorName, setMentorNAme] = useState("")
 
   const alreadyTakenSlots = alreadyExistingAppointments.calendar.map(
     (slot) => new Date(Date.parse(slot.date_time))
   )
-
-  // const nameOfMentor = alreadyExistingAppointments.mentor.map(
-  //  (firstAndLastName) => setMentorNAme(firstAndLastName)
-  // )
 
 
   let selectedDate = moment(datePicked).format("YYYY-MM-DD");

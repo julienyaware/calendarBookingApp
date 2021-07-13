@@ -22,14 +22,10 @@ function CfCalendar() {
     }
   }
 
-  // useEffect(() => {
-  //   fetchData();
-  // });
 
     const onChange = date => {
       setDate(date)
       fetchData()
-      //console.log(existingAppointments)
     
     }
 
