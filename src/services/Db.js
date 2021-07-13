@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 
 let firebaseConfig = {
-	apiKey: "AIzaSyAuaVTE7wtP582PjgobKVYHYEwc6u_erVI",
+    apiKey: "AIzaSyAuaVTE7wtP582PjgobKVYHYEwc6u_erVI",
     authDomain: "cfchallenge-a1270.firebaseapp.com",
     databaseURL: "https://cfchallenge-a1270-default-rtdb.firebaseio.com",
     projectId: "cfchallenge-a1270",

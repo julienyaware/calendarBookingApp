@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import db from '../services/Db'
 import TimeSlots from './TimeSlots';
 
-function ConfirmationDetails() {
+function ConfirmationDetails({selectedSlotDateAndTime}) {
 
   const [reason, setReason] = useState("")
   const [name, setName] = useState("");
@@ -13,13 +13,12 @@ function ConfirmationDetails() {
     e.preventDefault();
 
     // Add data to the store
-    db.collection("data").add({
-      Name: name,
+    db.collection("confirmations").add({
       Time: time,
       Reason: reason
     })
       .then((docRef) => {
-        alert("Appointment with mentor confirmed")
+        alert("Appointment with mentor confirmed on: \n"+ selectedSlotDateAndTime +"\nReason for appointment is :\n" + reason )
         refreshPage()
       })
       .catch((error) => {
@@ -33,7 +32,8 @@ function ConfirmationDetails() {
   }
 
   const refreshPage = () => {
-    window.location.reload()
+   // window.location.reload()
+   console.log(String(selectedSlotDateAndTime))
   }
   return (
     <div>
@@ -42,11 +42,6 @@ function ConfirmationDetails() {
           <button className="backButton" onClick={refreshPage}>pick a different time slot</button>
           <form
             onSubmit={(event) => { sub(event) }}>
-            <label>User Name:</label>
-            <br />
-            <input type="text" placeholder="your name" required
-              onChange={(e) => { setName(e.target.value) }} />
-            <br /><br />
             <label>Reason for booking an appointment:</label>
             <br />
             <textarea type="text" placeholder="your reason" required
@@ -54,8 +49,8 @@ function ConfirmationDetails() {
             <br /><br />
             <label>Selected time slot:</label>
             <br />
-            <input type="text" placeholder="Time"
-              onChange={(e) => { setTime(e.target.value) }} />
+            <textarea disabled type="text" placeholder={selectedSlotDateAndTime}
+              onChange={(e) => { setTime(JSON.stringify({selectedSlotDateAndTime}))} }></textarea>
             <br /><br />
             <button className="timeStop" type="submit">Submit</button>
           </form>
