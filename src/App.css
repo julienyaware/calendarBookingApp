@@ -6,13 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-
-.App-header {
+.App-Content {
   background-color: #cfd6d8;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  column-gap: 80px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -49,11 +48,34 @@
 .timeStop{
   background-color: slateblue;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
+  color: white;
 }
 
 .slots{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 15px;
+ 
+}
+
+.header{
+  background-color: #cfd6d8;
+ 
+}
+.header-title{
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: bold;
+  color: slateblue;
+}
+
+.instructions{
+  background-color: #cfd6d8;
+}
+
+input, textarea{
+  border: 2px solid slateblue;
+  padding: 5px;
+  border-radius: 5px;
 }
