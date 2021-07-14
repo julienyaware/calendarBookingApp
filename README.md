@@ -50,6 +50,8 @@ Upon selection of an already booked time slot an alert is shown that the slot is
 
 When the user books an available time slot a confirmation box is shown upon which the user can enter the reason and submit. The details are then sent to the database.Upon successful submission to the database a popup with the details of time and reason is shown.
 
+The application is also responsive so that it can be viewed at ease on multiple devices.To make it responsive I have used flex-box, grid and media queries.
+
 
 ### `What to expect`
 
@@ -57,5 +59,5 @@ When the user books an available time slot a confirmation box is shown upon whic
 ![image](https://user-images.githubusercontent.com/13431164/125536854-8c455e7c-8f00-4684-80b4-1efff8b00289.png)
 ![image](https://user-images.githubusercontent.com/13431164/125536924-a8a44835-e231-4c30-a8a8-d0d267f38d2f.png)
 
-The application is also responsive.
+
 
