@@ -1,4 +1,4 @@
-### `Soulution for the Career Foundry Challenge : Calendar /Booking app`
+### `Calendar /Booking app`
 
 The app has been deployed on github pages . Use [this link](https://julienyaware.github.io/challengeCareerFoundry/) to access it
 
